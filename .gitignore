@@ -1,0 +1,4 @@
+toIgnore
+confdatei
+doc/reports/*
+doc/templates/*
