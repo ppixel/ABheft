@@ -10,6 +10,7 @@ Mit diesem Script kann man Einträge für bestimmte Tage in eine Datenbank pfleg
 - MySQL 5.7 Server oder höher
 - Rechte um eine Datenbank und ein User erstellen zu können.
 - Folgende Programme
+  - mysql
   - zip
   - unzip
 
@@ -28,7 +29,20 @@ CREATE USER 'abheft'@'%' IDENTIFIED BY 'TOPSECRETPASSWORD';
 GRANT ALL PRIVILEGES ON abheft.* TO 'abheft'@'%';
 EXIT;
 ```
-TODO
+
+## Platzhalter
+Platzhalter sind dazu da um sie ins Bericht-Template einzutragen, die dann mittels dem Befehl `./abheft.sh --create` mit Werten aus der Datenbank ersetzt werden.
+Es gibt folgende Platzhalter:
+- %%NAME%%
+- %%AUSBILDUNGSJAHR%%
+- %%ABTEILUNG%%
+- %%VON%%
+- %%BIS%%
+- %%MONTAG%%
+- %%DIENSTAG%%
+- %%MITTWOCH%%
+- %%DONNERSTAG%%
+- %%FREITAG%%
 
 ## Beispiele
 ```shell
